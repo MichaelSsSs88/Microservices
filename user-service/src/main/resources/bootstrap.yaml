@@ -17,3 +17,6 @@ spring:
       enabled: true
   messages:
     basename: messages/messages
+  profiles:
+    default: user-service
+    active:  user-service

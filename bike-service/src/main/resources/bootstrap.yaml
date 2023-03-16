@@ -16,3 +16,6 @@ spring:
       ddl-auto: update
 #server:
   #port: 8003
+  profiles:
+    default: bike-service
+    active:  bike-service

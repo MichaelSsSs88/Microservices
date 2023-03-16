@@ -1,10 +1,13 @@
 spring:
+  profiles:
+    active: user-service
   application:
     name: user-service
   cloud:
     config:
       enabled: true
       uri: http://localhost:8081/
+      fail-fast: true
   datasource:
     url: jdbc:mysql://localhost:3306/micro_user
     username: root
@@ -17,6 +20,3 @@ spring:
       enabled: true
   messages:
     basename: messages/messages
-  profiles:
-    default: user-service
-    active:  user-service

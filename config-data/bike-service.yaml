@@ -1,5 +1,3 @@
-server:
-  port:8003
 spring:
   devtools:
     add-properties: false
@@ -14,3 +12,5 @@ spring:
       ddl-auto: update
   application:
     name: bike-service
+server:
+  port: 8003

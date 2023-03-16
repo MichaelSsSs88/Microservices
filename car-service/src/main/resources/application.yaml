@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: car-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081/
+  datasource:
+    url: jdbc:mysql://localhost:3306/micro_user
+    username: root
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+  devtools:
+    restart:
+      enabled: true
+  messages:
+    basename: message/message
+#server:
+  #port: 8002

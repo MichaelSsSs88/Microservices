@@ -6,5 +6,26 @@ spring:
   cloud:
     config:
       enabled: true
-      uri: http://localhost:8081/
+      uri: http://localhost:8081
       fail-fast: true
+  devtools:
+    add-properties: false
+  messages:
+    basename: message/message
+  datasource:
+    url: jdbc:mysql://localhost:3306/micro_user
+    username: root
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8001
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost
